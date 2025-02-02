@@ -1,0 +1,156 @@
+/* Shared styles for the hero travel website */
+
+* {
+    font-family: "Mulish";
+    /* background-color: brown; */
+   
+}
+header, main {
+    max-width: 90%;
+    margin: 2rem auto;
+}
+:root{
+    --primaty:#FF5400;
+    --banner-text-color:#FFFFFF;
+    --secondary: #131318;
+    --text-color:#424247;
+    --font-primary:3rem;
+    --font-secondary:1.25rem;
+    --line-hight:1.75rem;
+    --later-spacing:1.25rem;
+    --background-card-1:#29CEF6;
+    --background-card-2:#FBB563;
+    --background-card-3:#E94444;
+}
+.btn-primary{
+    background-color: var(--primaty);
+    padding: 1rem 3.5rem;
+    border-radius: 4px;
+    border: none;
+
+}
+.tour-title{
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin: 0;
+}
+.tour-description, ul li{
+    color:var(--text-color);
+    font-size: var(--font-secondary);
+    line-height: var(var(--line-hight));
+    font-weight: 300;
+}
+
+/* header section styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    font-size: 2.75rem;
+    color:var(--secondary);
+}
+.span-color{
+    color:var(--primaty);
+}
+nav ul {
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    color:var(--text-color);
+}
+nav ul li a {
+    text-decoration: none;
+}
+ul .home{
+    color:var(--primaty);
+}
+/* banner section styles */
+.banner-container{
+    padding: 6rem 2.75rem;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-size: cover; 
+    border-radius: 15px;
+}
+.banner-content{
+    padding: 0 10rem;
+    margin: 0px auto;
+}
+.banner-title{
+    font-size: 4rem;
+    color:var(--banner-text-color);
+    margin: 0px;
+}
+.banner-description{
+    color:var(--banner-text-color);
+    font-size: var(--font-secondary);
+    line-height: var(var(--line-hight));
+    padding: 1.35rem auto;
+    font-weight: 300;
+}
+.banner-input{
+    background: rgba(255, 255, 255, 0.4);
+    margin:0 8.6rem;
+    padding: 1rem 0rem;
+    border-radius: 5px;
+    
+}
+input[type="text"] {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+input, .btn-primary{
+    margin-left: 8px;
+}
+/* main section style start here  */
+
+.popular-tour-container{
+    display: flex;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.popular-content ul li {
+    line-height: 1.7rem;
+    padding: .8rem 0;
+}
+/* <!-- choose-your-destination section start  --> */
+
+.choose-your-destination{
+    margin: 2rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* media quary style is start here  */
+
+@media screen and (max-width:746px) {
+    header, main {
+        max-width: 90%;
+        margin: 1rem;
+    }
+    nav, .popular-tour-container{
+    flex-direction: column;    
+    }  
+    nav ul li{
+        margin-right: .5rem;
+    } 
+    .banner-container, .banner-content{
+        padding: 1rem;
+    } 
+    .banner-input{
+        margin: 0px 2.5rem;
+    }
+    input, .btn-primary{
+        margin: 5px 0px;
+    }
+    .tour-img img{
+        width: 100%;
+    }
+}
