@@ -123,7 +123,7 @@ input, .btn-primary{
 }
 /* <!-- choose-your-destination section start  --> */
 
-.choose-your-destination{
+.choose-your-destination, .why-choose-us{
     margin: 2rem auto;
     width: 100%;
     text-align: center;
@@ -174,6 +174,31 @@ input, .btn-primary{
 this code are for my helping hand i collect this code form AI.    
 */
 
+/* <!-- why-choose-us section start here --> */
+.why-choose-us-card-container{
+    display: flex;
+    max-width: calc(100 / 2 - 30);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.card-content-1,
+    .card-content-2,.card-content-3 {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+.card-content-3{
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    max-width: 50%;
+}
+.card-description{
+    color: var(--text-color);
+}
+
 /* media quary style is start here  */
 
 @media screen and (max-width:746px) {
@@ -181,7 +206,7 @@ this code are for my helping hand i collect this code form AI.
         max-width: 90%;
         margin: 1rem;
     }
-    nav, .popular-tour-container{
+    nav, .popular-tour-container, .why-choose-us-card-container{
     flex-direction: column;    
     }  
     nav ul li{
